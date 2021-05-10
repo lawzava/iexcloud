@@ -41,6 +41,14 @@ type USExchange struct {
 	Type     string `json:"type"`
 }
 
+type Exchange struct {
+	Exchange       string `json:"exchange"`
+	Region         string `json:"region"`
+	Description    string `json:"description"`
+	MIC            string `json:"mic"`
+	ExchangeSuffix string `json:"exchangeSuffix"`
+}
+
 // TradeHolidayDate models either a trade date or a holiday.
 type TradeHolidayDate struct {
 	Date           Date `json:"date"`
